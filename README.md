@@ -16,3 +16,7 @@ Link CSS and JS file to page
 		'disagreeBtnUrl':'http://www.google.com'
 	});
 ```
+
+### Example
+
+http://playground.acidclick.cz/restricted-age/
