@@ -1,0 +1,99 @@
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background: @color;
+  background: -webkit-gradient(linear,
+                               left bottom,
+                               left top,
+                               color-stop(0, @start),
+                               color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom,
+                                  @start,
+                                  @stop);
+  background: -moz-linear-gradient(center bottom,
+                                   @start 0%,
+                                   @stop 100%);
+  background: -o-linear-gradient(@stop,
+                                 @start);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+
+#restrictedAge{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	min-height:100%;
+	background-color:rgba(0,0,0,0.95);	
+	text-align: center;
+
+	.restrictedAgeWrapper{
+		
+		margin:0 auto 0 auto; 
+		text-align:center;
+		position:relative;
+
+		@media all and (max-width: 480px){
+			top:20px;
+			width:90%;			
+		}
+
+		@media all and (min-width: 481px) and (max-width:800px){
+			top:50px;
+			width:70%;			
+		}
+
+		@media all and (min-width: 801px) and (max-width:1024px){
+			top:80px;
+			width:50%;			
+		}
+
+		@media all and (min-width: 1025px){
+			top:130px;
+			width:40%;			
+		}		
+
+		h2{
+			color:white;
+		}			
+
+		.agreeBtn, .disagreeBtn{
+			display:inline-block;
+			text-decoration: none;
+			margin:0 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			color: #050505;
+			padding: 10px 20px;
+			.gradient(@color: #ffffff, @start: #ebebeb, @stop: #b5b5b5);
+			.rounded-corners(10px);
+			border: 1px solid #949494;
+			.drop-shadow(0px, 1px, 3px, 0.5);
+			text-shadow:
+				0px -1px 0px rgba(000,000,000,0.2),
+				0px 1px 0px rgba(255,255,255,1);		
+		}
+
+		.agreeBtn:hover, .disagreeBtn:hover{
+			.gradient(@color: #ffffff, @start: #b5b5b5, @stop: #b5b5b5);
+		}
+
+		.restrictedAgeText{
+			color: white;
+			text-align: left;
+		}
+
+	}
+}

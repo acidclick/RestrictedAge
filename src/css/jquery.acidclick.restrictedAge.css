@@ -1,0 +1,80 @@
+#restrictedAge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+}
+#restrictedAge .restrictedAgeWrapper {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  position: relative;
+}
+@media all and (max-width: 480px) {
+  #restrictedAge .restrictedAgeWrapper {
+    top: 20px;
+    width: 90%;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 800px) {
+  #restrictedAge .restrictedAgeWrapper {
+    top: 50px;
+    width: 70%;
+  }
+}
+@media all and (min-width: 801px) and (max-width: 1024px) {
+  #restrictedAge .restrictedAgeWrapper {
+    top: 80px;
+    width: 50%;
+  }
+}
+@media all and (min-width: 1025px) {
+  #restrictedAge .restrictedAgeWrapper {
+    top: 130px;
+    width: 40%;
+  }
+}
+#restrictedAge .restrictedAgeWrapper h2 {
+  color: white;
+}
+#restrictedAge .restrictedAgeWrapper .agreeBtn,
+#restrictedAge .restrictedAgeWrapper .disagreeBtn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 14px;
+  color: #050505;
+  padding: 10px 20px;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ebebeb), color-stop(1, #b5b5b5));
+  background: -ms-linear-gradient(bottom, #ebebeb, #b5b5b5);
+  background: -moz-linear-gradient(center bottom, #ebebeb 0%, #b5b5b5 100%);
+  background: -o-linear-gradient(#b5b5b5, #ebebeb);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5b5b5', endColorstr='#ebebeb', GradientType=0);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #949494;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2), 0px 1px 0px white;
+}
+#restrictedAge .restrictedAgeWrapper .agreeBtn:hover,
+#restrictedAge .restrictedAgeWrapper .disagreeBtn:hover {
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b5b5b5), color-stop(1, #b5b5b5));
+  background: -ms-linear-gradient(bottom, #b5b5b5, #b5b5b5);
+  background: -moz-linear-gradient(center bottom, #b5b5b5 0%, #b5b5b5 100%);
+  background: -o-linear-gradient(#b5b5b5, #b5b5b5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5b5b5', endColorstr='#b5b5b5', GradientType=0);
+}
+#restrictedAge .restrictedAgeWrapper .restrictedAgeText {
+  color: white;
+  text-align: left;
+}
