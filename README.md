@@ -1,6 +1,11 @@
-# Restricted Age :: jQuery plugin
+## Restricted Age Area :: jQuery plugin
 
-## USAGE
+### Usage
+
+Link CSS and JS file to page
+
++
+
 ```js
 
 	$('body').restrictedAge({
